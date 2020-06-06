@@ -48,7 +48,7 @@
             "LamaLama\\Osre\\OsreServiceProvider"
         ],
         "aliases": {
-            "Osre": "LamaLama\\Osre\\OsreFacade"
+            "OSRE": "LamaLama\\Osre\\OsreFacade"
         }
     }
   },

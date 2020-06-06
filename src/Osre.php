@@ -2,23 +2,28 @@
 
 namespace LamaLama\Osre;
 
+use LamaLama\Osre\Dossiers;
+use LamaLama\Osre\InterestRequests;
+
 class Osre
 {
     /**
-     * Construct.
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
-     * Index.
+     * Dossiers.
      *
      * @return void
      */
-    public function index()
+    public function dossiers()
     {
-        //
+        return new Dossiers();
+    }
+
+    /**
+     * InterestRequests.
+     *
+     * @return void
+     */
+    public function interestRequests()
+    {
+        return new InterestRequests();
     }
 }
