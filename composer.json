@@ -1,0 +1,57 @@
+{
+  "name": "lamalama/laravel-osre",
+  "description": "OSRE for Laravel",
+  "keywords": [
+    "laravel",
+    "OSRE",
+  ],
+  "homepage": "https://github.com/lamalamaNL/laravel-osre",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Lama Lama",
+      "email": "info@lamalama.nl"
+    },
+    {
+      "name": "Mark de Vries",
+      "email": "mark@lamalama.nl"
+    }
+  ],
+  "require": {
+    "php": "^7.3"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^5.0",
+    "pestphp/pest": "^0.1.5",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LamaLama\\Osre\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LamaLama\\Osre\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "LamaLama\\Osre\\OsreServiceProvider"
+        ],
+        "aliases": {
+            "Osre": "LamaLama\\Osre\\OsreFacade"
+        }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
