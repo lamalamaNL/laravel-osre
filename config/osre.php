@@ -4,14 +4,12 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Package Name
+    | API key
     |--------------------------------------------------------------------------
     |
-    | This value is the name of your package. This value is used when the
-    | package needs to place the package's name in a notification or
-    | any other location as required by the package.
+    | The OSRE API key
     |
     */
 
-    'name' => 'OSRE for Laravel',
+    'api_key' => env('OSRE_API_KEY', null),
 ];

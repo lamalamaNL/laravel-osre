@@ -5,6 +5,12 @@ namespace LamaLama\Osre;
 class Dossiers
 {
     /**
+     * $endpoint
+     * @var string
+     */
+    private $endpoint = 'dossiers';
+
+    /**
      * List.
      *
      * @return void

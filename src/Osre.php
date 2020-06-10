@@ -7,6 +7,9 @@ use LamaLama\Osre\InterestRequests;
 
 class Osre
 {
+    private $prod = 'https://relet.relet.prd.osre.eu/api/v1';
+    private $test = 'https://relet.relet.tst.osre.eu/api/v1';
+
     /**
      * Dossiers.
      *
